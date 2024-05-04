@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Day In My Life</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .greeting {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .datetime {
+      font-size: 1rem;
+    }
+    .carousel-item {
+      position: relative;
+      height: 400px; /* Adjust height as needed */
+    }
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .card {
+      border: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+    }
+    .card-img-top {
+      transition: transform 0.3s;
+      max-height: 280px; /* Adjust max-height as needed */
+    }
+    .card-title {
+      font-size: 1.2rem; /* Adjust font-size as needed */
+    }
+    .card-text {
+      font-size: 1.0rem; /* Adjust font-size as needed */
+    }
+    .footer {
+      background-color: #212529;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">KULINER KHAS BANDUNG </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HALAMAN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">INFORMASI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT CENTER</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="greeting">Good Morning,Afternoon,Evening! SELAMAT DATANG MUHAMMAD IHSAN PUTRA RIADI</p>
+      </div>
+      <div class="col-md-6 text-right">
+        <p id="currentDateTime" class="datetime"></p>
+      </div>
+    </div>
+    
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://nibble-images.b-cdn.net/nibble/original_images/surabi_di_bandung_09_c1ae124539.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>SURABI BANDUNG</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ytimg.com/vi/5pgh9uWz51c/maxresdefault.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Pisang Bolen</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://awsimages.detik.net.id/community/media/visual/2019/11/29/c1da4697-6737-4e6f-9560-31363968faea.jpeg?w=600&q=90" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Soto Bandung</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://img-global.cpcdn.com/recipes/f8825cd521bc9883/1200x630cq70/photo.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Brownies Kukus</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://down-id.img.susercontent.com/file/d300a6fe00c4575c7d4657b54f1f83fe" class="card-img-top" alt="..." data-toggle="modal" data-target="#exampleModal1">
+        <div class="card-body">
+          <h5 class="card-title">TAHU SUSU BANDUNG</h5>
+          <p class="card-text">Tahu susu lembang pertama kali didirikan oleh Perry Tristianto pada tanggal 21 desember 2008 yang terletak di Jalan Raya Lembang 177, Kabupaten Bandung Barat, dan mulai beroperasi pada bulan Desember 2008.Awalnya berasal dari Tiongkok, tahu kemudian menjelma menjadi salah satu ikon kuliner Nusantara. Tahu merupakan lauk yang digemari semua kalangan karena memiliki tekstur yang lembut dan kaya nilai gizi, lauk berbahan kedelai ini juga bikin nagih karena rasanya yang gurih. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5vqdqIJcsvpylQLRBTsWzhrooz6K9Oq1FZRG2KHUrpA&s" class="card-img-top" alt="..." data-toggle="modal" data-target="#exampleModal2">
+        <div class="card-body">
+          <h5 class="card-title">CUANKI</h5>
+          <p class="card-text">Cuanki berasal dari merk dagang panganan Tim Sam (dimsum) berkuah bernama Bakso Tahu Kuah Choan Kie, di daerah Bandung dan berproduksi di kota Cimahi. Choan Kie sendiri mengandung arti rezeki.bakso Cuanki itu memiliki arti Cari Uang Jalan Kaki lho. Kata-kata ini berasal dari makna si penjual bakso yang menjajakan dagangannya dengan cara berjalan kaki. Maka itulah dikenal dengan sebutan bakso Cuanki. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://awsimages.detik.net.id/community/media/visual/2021/05/16/mie-kocok-bandung_43.jpeg?w=1200" class="card-img-top" alt="..." data-toggle="modal" data-target="#exampleModal3">
+        <div class="card-body">
+          <h5 class="card-title">MIE KOCOK BANDUNG</h5>
+          <p class="card-text">Istilah kocok dalam nama hidangan ini merujuk kepada proses memasaknya, yaitu mengocok-ngocok mi dalam wadah logam bolong-bolong bergagang, seraya mencelupkannya ke dalam air panas. Hidangan ini terdiri atas mi kuning yang disajikan dalam kuah kaldu sapi kental, irisan kikil (tendon kaki sapi), taoge, bakso, jeruk nipis, dan ditaburi irisan seledri, daun bawang, dan bawang goreng.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Pengertian</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Seperti tahu pada umumnya namun dengan tekstur yang lebih kenyal dan rasa yang khas. Terbuat dari susu kedelai dan biasanya digoreng hingga permukaannya krispi.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Pengetian dari Judul</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Makanan khas Kota Kembang yang berikutnya ini mirip seperti bakso. Hanya saja cuanki ini merupakan makanan berkuah tanpa menggunakan mie kuning maupun bihun. Kuahnya gurih dan panas, cocok untuk mengisi perut saat menikmati cuaca dingin di Bandung.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">CITRA RASA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Kurang lengkap rasanya jika membahas kuliner khas Bandung tanpa membahas mie kocok Bandung ini. Kuliner jalanan khas Bandung tersebut merupakan makanan mie yang dicampur dengan kuah yang gurih. Untuk campurannya sendiri yaitu kikil sapi, tauge, dan berbagai aneka sayuran
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-4">
+  <div class="container">
+    <span>&copy; 2024 Artikel Jurnal.com All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  // Update current date and time
+  function updateDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
+    document.getElementById('currentDateTime').textContent = dateTimeString;
+  }
+
+  // Update date and time every second
+  setInterval(updateDateTime, 1000);
+
+  // Initial update
+  updateDateTime();
+</script>
+</body>
+</html>
